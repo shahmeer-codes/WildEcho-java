@@ -82,7 +82,11 @@ public class Forest {
 
             System.out.println("\n------------------------------");
             System.out.println("You selected: " + animal.getName());
+            animal.showInfo();
+            System.out.println();
             animal.speak();
+            animal.eat();
+            animal.move();
             System.out.println("------------------------------");
 
             System.out.print("\nDo you want to choose another animal? (y/n): ");
