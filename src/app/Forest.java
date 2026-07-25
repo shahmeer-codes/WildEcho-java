@@ -2,7 +2,16 @@ package app;
 
 import java.util.Scanner;
 
-import animals.*;
+import animals.Animal;
+import animals.Cat;
+import animals.Dog;
+import animals.Lion;
+import animals.Tiger;
+import animals.Elephant;
+import animals.Horse;
+import animals.Wolf;
+import animals.Fox;
+import animals.Monkey;
 
 public class Forest {
 
