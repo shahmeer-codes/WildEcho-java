@@ -79,6 +79,38 @@ public class Forest {
                     animal = new Monkey();
                     break;
 
+                case 10:
+
+                    Animal[] animals = {
+                        new Cat(),
+                        new Dog(),
+                        new Lion(),
+                        new Tiger(),
+                        new Elephant(),
+                        new Horse(),
+                        new Wolf(),
+                        new Fox(),
+                        new Monkey()
+                    };
+
+                    System.out.println("\n========= All Animals =========");
+
+                    for (Animal a : animals) {
+
+                        System.out.println("\n------------------------------");
+                        System.out.println("You selected: " + a.getName());
+                        System.out.println();
+
+                        a.showInfo();
+                        System.out.println();
+
+                        a.speak();
+
+                        System.out.println("------------------------------");
+                    }
+
+                    continue;
+
                 case 0:
                     running = false;
                     System.out.println("\nThank you for visiting WildEcho!");
@@ -91,11 +123,13 @@ public class Forest {
 
             System.out.println("\n------------------------------");
             System.out.println("You selected: " + animal.getName());
+            System.out.println();
+
             animal.showInfo();
             System.out.println();
+
             animal.speak();
-            animal.eat();
-            animal.move();
+
             System.out.println("------------------------------");
 
             System.out.print("\nDo you want to choose another animal? (y/n): ");
@@ -122,6 +156,7 @@ public class Forest {
         System.out.println("7. Wolf");
         System.out.println("8. Fox");
         System.out.println("9. Monkey");
+        System.out.println("10. Show All Animals");
         System.out.println("0. Exit");
     }
 }
